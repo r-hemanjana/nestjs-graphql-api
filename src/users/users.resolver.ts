@@ -22,7 +22,7 @@ export class UsersResolver {
   }
 
   @Mutation(() => UserModel)
-  createUser(@Args('input') input: UserInput): Promise<User> {
+  registerUser(@Args('input') input: UserInput): Promise<User> {
     return this.usersService.create(input);
   }
 
